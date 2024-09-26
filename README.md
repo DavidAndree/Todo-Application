@@ -1,8 +1,9 @@
 # Assignment 2 - Todo Application
 
 ## Author
-
-
+David Alvarado
+CIS 218
+09/26/2024
 
 ## Description
 
@@ -138,8 +139,8 @@ If you have more questions regarding this, don't hesitate to ask.
 
 ## Outside Resources Used
 
-
+Used this video to help me understand running test better https://www.youtube.com/watch?v=0MrgsYswT1c
 
 ## Known Problems, Issues, And/Or Errors in the Program
 
-
+Test are not running properly - yet

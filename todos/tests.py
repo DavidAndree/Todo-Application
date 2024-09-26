@@ -24,5 +24,5 @@ class TodoTests(TestCase):
         """Test Home Page"""
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "todos/home.html")
+        self.assertTemplateUsed(response, "home.html")
         self.assertContains(response, "Test Todo")
