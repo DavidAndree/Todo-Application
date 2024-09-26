@@ -1,3 +1,9 @@
+"""
+David Alvarado
+cis 218
+09/25/24
+"""
+
 from django.db import models
 
 
