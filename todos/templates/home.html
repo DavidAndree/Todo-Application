@@ -1,0 +1,40 @@
+<!-- templates home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Todo List</h1>
+    <a href="/admin/todos/todo/add/" class="btn btn-primary mb-3">
+        <i class="bi bi-plus-circle"></i> Add Todo
+    </a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name of Thing Todo</th>
+                <th>Date to Complete</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for todo in todos %}
+            <tr>
+                <td>{{ todo.name }}</td>
+                <td>{{ todo.due_date|date:"M. d, Y" }}</td>
+                <td>
+                    <a href="/admin/todos/todo/{{ todo.id }}/change/" class="btn btn-success btn-sm">
+                        <i class="bi bi-pencil"></i> Edit
+                    </a>
+                    <a href="/admin/todos/todo/{{ todo.id }}/delete/" class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i> Delete
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<footer class="text-center mt-5">
+    <p>&copy; 2024 – David Alvarado</p>
+</footer>
+{% endblock %}
