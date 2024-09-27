@@ -142,5 +142,3 @@ If you have more questions regarding this, don't hesitate to ask.
 Used this video to help me understand running test better https://www.youtube.com/watch?v=0MrgsYswT1c
 
 ## Known Problems, Issues, And/Or Errors in the Program
-
-Test are not running properly - yet

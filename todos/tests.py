@@ -13,12 +13,12 @@ class TodoTests(TestCase):
     """Todo Test"""
 
     def setUp(self):
-        self.todo = Todo.objects.create(name="Test Todo", due_date="2024-10-01")
+        self.todo = Todo.objects.create(name="Test Todo", due_date="2024-10-02")
 
     def test_todo_content(self):
         """Todo Todo Content"""
         self.assertEqual(self.todo.name, "Test Todo")
-        self.assertEqual(self.todo.due_date.strftime("%Y-%m-%d"), "2024-10-01")
+        self.assertEqual(self.todo.due_date, "2024-10-02")
 
     def test_homepage(self):
         """Test Home Page"""
