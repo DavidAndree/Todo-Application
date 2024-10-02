@@ -24,7 +24,7 @@ CIS 218
             {% for todo in todos %}
             <tr>
                 <td>{{ todo.name }}</td>
-                <td>{{ todo.due_date|date:"M. d, Y" }}</td>
+                <td>{{ todo.complete_by|date:"M. d, Y" }}</td>
                 <td>
                     <a href="/admin/todos/todo/{{ todo.id }}/change/" class="btn btn-success btn-sm">
                         <i class="bi bi-pencil"></i> Edit
